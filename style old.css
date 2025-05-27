@@ -1,0 +1,190 @@
+/* ========================= */
+/*       GENERALITES         */
+/* ========================= */
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+    --globalchrome-font-family: 'Matterhorn', Helvetica, Arial, sans-serif;
+    --globalchrome-font-weight: normal;
+    --globalfooter-font-style: normal;
+        --OngletsHeader-font-family: 'Matterhorn', Helvetica, Arial, sans-serif;
+        --OngletsHeader-font-weight: 700;
+        --OngletsHeader-font-size: 14px;
+        --OngletsHeader-line-height: 1.1;
+        --OngletsHeader-text-transform: uppercase;
+        --OngletsHeader-letter-spacing: -0.02em;
+            --utility-font-family: InspireTWDC, Helvetica, sans-serif;
+            --utility-font-weight: normal;
+            --utility-font-style: normal;
+        --header-font-family: InspireTWDC, AvenirNext, Matterhorn, InspireTWDC, Helvetica, sans-serif;
+        --header-font-weight: 400;
+        --header-font-style: normal;
+    --body-font-family: InspireTWDC, AvenirNext, Matterhorn, InspireTWDC, Helvetica, sans-serif;
+    --body-font-weight: 400;
+    --body-font-style: normal;
+        --globalfooter-font-family: InspireTWDC, AvenirNext, Matterhorn, InspireTWDC, Helvetica, sans-serif;
+        --globalfooter-font-weight: 400;
+        --globalfooter-font-style: normal;
+            --bigger-max-width: 1600px;
+            --lessBigger-max-width: 1392px;
+        --effetZoom-transform: scale(1.05);
+        --effetZoom-transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+a {
+  text-decoration: none; /* pas de soulignement */
+  color: #0c0c0c; /* couleur du texte */
+  cursor: pointer; /* curseur en main */
+}
+main {
+  position: relative; /* positionnement relatif */
+  z-index: -3;
+  background-color: #f1f2f3; /* couleur de fond */
+}
+body {
+  max-width: var(--bigger-max-width);
+  margin: 0 auto;
+}
+section {
+    /* réglage de positionnement général pour les trames de toutes les sections*/
+    display: flex; /* affichage flexible */
+    flex-direction: column; /* direction de la flexbox */
+    justify-content: center; /* centrage vertical */
+    width: var(--lessBigger-max-width); /* largeur de la section */
+    margin-left: auto; /* marge gauche de la section */
+    margin-right: auto; /* marge droite de la section */
+}
+.effetZoom {
+  overflow: hidden;
+}
+.effetZoom img:hover {
+  transform: var(--effetZoom-transform); /* effet de zoom */
+  transition: var(--effetZoom-transition); /* transition de l'effet de zoom */
+}
+.contenuVertical {
+  display: flex; /* affichage flexible */
+  flex-direction: column; /* direction de la flexbox */
+  justify-content: center; /* centrage vertical */
+  align-items: center; /* centrage horizontal */
+}
+.lateralScreenSize {
+    max-width: var(--bigger-max-width); /* largeur maximale */
+    margin: 0 auto;
+}
+/* ========================= */
+/*      REGION HEADER        */
+/* ========================= */
+header {
+    height: 63px; /* hauteur de l'en-tête */;
+    padding: 0;
+    display: block;
+    min-width: 672px;
+    position: relative;
+    z-index: 1000;
+    box-sizing: content-box;
+    text-align: left;
+}
+ul li {
+  /* réglage police de caractères */
+  font-family: var(--OngletsHeader-font-family); 
+  font-size: var(--OngletsHeader-font-size);
+  line-height: var(--OngletsHeader-line-height);
+  text-transform: var(--OngletsHeader-text-transform);
+  font-weight: var(--OngletsHeader-font-weight);
+  letter-spacing: var(--OngletsHeader-letter-spacing);
+  list-style: none; /* pas de puces */
+        /* réglage positionnement */;
+        display: block;
+        flex: 1;
+        padding-left: 0;
+        height: 63px;
+}
+ul li {
+    position: static;
+    display: inline-block;
+    padding-left: 11px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: 2px;
+    box-sizing: content-box;
+    
+    pos
+}
+ul li a:hover {
+  color: #0063e5;
+}
+ul li a img {
+  /* réglage de dimensions */
+  width: 95px; /* largeur de l'image */
+  height: auto; /* hauteur automatique */
+        /* réglage de positionnement */
+        display: inline-flex;
+        position: relative;
+        border: 0;
+        vertical-align: middle;
+}
+/* ========================= */
+/*   REGION LILO ET STITCH   */
+/* ========================= */
+.liloStitch {
+  box-sizing: border-box; /* modèle de boîte */
+
+}
+#fondLilo {
+            display: inline-flex; 
+        vertical-align: middle; 
+  position: absolute;
+  z-index: 0; /* niveau d'empilement */
+  height: auto; /* hauteur automatique */
+margin-top: -5px; /* marge supérieure */
+  margin-left: -800px; /* marge gauche */
+    /* réglage de dimensions */
+}
+#logoLilo img{
+  /* réglage de dimensions */
+  width: 400px  ; /* largeur de l'image */
+  height: auto; /* hauteur automatique */
+        /* réglage de positionnement */
+        display: inline-flex;
+        position: relative;
+        z-index: 2;
+}
+.conteneurDeVerticalite div {
+    display: flex; /* affichage flexible */
+    position: relative; /* positionnement relatif */
+    z-index: 3; /* niveau d'empilement */
+  display: flex; /* affichage flexible */
+  flex-direction: column; /* direction de la flexbox */
+  justify-content: center; /* centrage vertical */
+  align-items: center; /* centrage horizontal */
+}
+.contenerLiloStitch a{
+  display: flex; /* affichage flexible */
+  position: relative;
+  z-index: 2; /* niveau d'empilement */
+  
+  justify-content: center; /* centrage vertical */
+  align-items: center; /* centrage horizontal */
+}
+
+
+
+
+/* ========================= */
+/*  REGION SECTION 2 LINKS   */
+/* ========================= */
+
+/* REGION SECTION 2 - BOX LINKS */
+.linkBoxes div img {
+  /* réglage de dimensions */
+  width: 333px; /* largeur de l'image */
+  height: auto; /* hauteur automatique */
+        /* réglage de positionnement */
+        display: inline-flex;
+        position: relative;
+        margin-left: -29px; /* marge gauche de l'image */
+        margin-right: -8px;
+        padding-top: 16px;
+        padding-bottom: 10px;
+}

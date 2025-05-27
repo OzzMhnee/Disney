@@ -1,0 +1,373 @@
+* {
+  margin-left: auto; /* marge extérieure */
+  margin-right: auto; /* marge extérieure */
+  margin-top: 0px; /* marge extérieure */
+  margin-bottom: 0px; /* marge extérieure */
+  max-width: 1600px; /* largeur maximale */
+}
+a {
+  text-decoration: none; /* pas de soulignement */
+  color: #0c0c0c; /* couleur du texte */
+}
+ul {
+  margin-top: -7px; /* marge supérieure */
+  display: flex; /* affichage flexible */
+  gap: 36px; /* espace entre les onglets */
+  list-style: none; /* pas de puces */
+  align-items: center; /* alignement vertical */
+}
+ul li a {
+  padding-bottom: 10; /* espace intérieur */
+  margin-left: -5px; /* marge intérieure */
+  cursor: pointer; /* curseur en main */
+  color: #0c0c0c; /* couleur du texte */
+  font-family: 'Helvetica', Arial, sans-serif; /* police de caractères */
+  font-size: 14px; /* taille de la police */
+  text-transform: uppercase; /* texte en majuscules */
+  font-weight: ; /* texte en gras */
+  justify-content: flex-start; /* espace entre les éléments */
+  letter-spacing: 0.1px; /* espacement des lettres */
+  ;
+}
+ul li a:hover {
+  color: #0063e5;
+}
+
+header {
+  padding-top: 6px; /* marge intérieure */
+  padding-left: 11px; /* marge intérieure */
+  margin-left: 10px; /* marge intérieure */
+  height: 63px; /* hauteur de l'en-tête */
+  display: flex; /* affichage flexible */
+  align-items: center; /* alignement vertical */
+
+}
+#topLogo {
+  cursor: pointer; /* curseur en main */
+  width: 95px; /* largeur de l'image */
+  height: auto; /* hauteur automatique */
+}
+main {
+  background-color: #f1f2f3; /* couleur de fond */
+}
+#liloStitch {
+  box-sizing: border-box;
+  position: relative; 
+  margin-top: -6px; /* marge supérieure */
+}
+#fondLilo {
+  position: absolute; /* position relative */
+  z-index: 0; /* niveau d'empilement */
+  width: 100%; /* largeur de l'image */
+  height: auto; /* hauteur automatique */
+  overflow: hidden; /* débordement caché */
+}
+#fondLilo img:hover {
+   transform: scale(1.05);  /* échelle de l'image */ 
+   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1); /* transition plus douce */
+}
+#logoLilo img {
+  
+  width: 400px; /* largeur de l'image */
+  height: 317px; /* hauteur de l'image */
+}
+.FirstBandeauAlign {
+  position: absolute;
+  display: flex;
+  z-index: 1; /* niveau d'empilement */
+  flex-direction: column;
+  width: 400px; /* largeur de l'image */
+  height: 800px; /* hauteur de l'image */
+  margin: 109px auto 0 155px; /* marge intérieure */
+}
+#dateDeSortieLilo p{
+  margin-left: 120px;
+  margin-top: 6px; /* marge intérieure */
+  font-family: 'Helvetica', Arial, sans-serif; /* police de caractères */
+  color: #000000; /* couleur du texte */
+  font-size: 15px; /* taille de la police */
+}
+#lienBilletsLilo button{
+  margin-top: 16px; /* marge supérieure */
+  padding: 17px 21px; /* padding intérieur */
+  font-family: 'Helvetica', Arial, sans-serif; /* police de caractères */
+  background-color: #5a6996;
+  color: #ffffff; /* couleur du texte */
+  Letter-spacing: 1px; /* espacement des lettres */
+  text-transform: uppercase; /* texte en majuscule */
+  border: none;
+  border-radius: 30px; /* coins arrondis */
+  font-weight: 700; /* texte en gras */
+  line-height: 0.9; /* hauteur de ligne */
+  font-size: 15px; /* taille de la police */
+}
+#lienBilletsLilo button:hover {
+  background-color: #53618a; /* couleur de fond au survol */
+  cursor: pointer; /* curseur en main */
+}
+#EnSavoirPlusLilo button  {
+  margin-top: 12px; /* marge supérieure */
+  padding: 14px 52px; /* espace intérieur */
+  font-family: 'Helvetica', Arial, sans-serif; /* police de caractères */
+  background-color: transparent; /* couleur de fond transparente */
+  letter-spacing: 1px; /* espacement des lettres */
+  text-transform: uppercase; /* texte en majuscule */
+  font-weight: bold;
+  font-size: 15px; /* taille de la police */
+  border-radius: 30px;
+  border: 1px solid #000000; /* bordure noire */
+}
+#EnSavoirPlusLilo button:hover {
+  background-color:#ccd1d273 ; /* couleur de fond au survol */
+  border-color: transparent; /* couleur de la bordure au survol */
+}
+
+.LiensBoxes {
+  display: flex; /* affichage flexible */  
+  padding-left: 98px; /* espace intérieur */
+  padding-right: 100px; /* espace intérieur */
+  padding-top: 706px;
+  padding-bottom: 50px; /* espace intérieur */
+}
+
+#ImgBoutique {
+  position: relative; /* position relative */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px;
+  height: 603.633px; /* hauteur de l'image */
+  background-color: #ffffff;
+  margin-left: 0px; /* marge intérieure */
+  margin-top: 0px; /* marge intérieure */
+}
+#ImgBoutique img {
+  width: 333px; /* largeur de l'image */
+  height: auto; /* hauteur automatique */
+}
+.TexteBoutique {
+    padding-left: 30px; /* espace intérieur */
+}
+#BoxTitleBoutique {
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+    font-family: 'InspireTWDC'; /* police de caractères */
+  font-size: 21px; /* taille de la police */margin-left: 0px; /* marge intérieure */
+  margin-top: -205px; /* marge intérieure */
+}
+#BoxParaBoutique {
+  font-family: 'InspireTWDC'; /* police de caractères */
+  font-size: 15.5px; /* taille de la police */
+  margin-top: 15px;
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+}
+#BoxStrongBoutique {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 19.2px;
+  align-items: center;
+  font-family: 'Times New Roman Boldk'; /* police de caractères */
+  font-size: 16px; /* taille de la police */
+  margin-top: px;
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+}
+
+#ImgDisneyPlus {
+  position: relative; /* position relative */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px;
+  height: 603.633px; /* hauteur de l'image */
+  background-color: #ffffff;
+  margin-left: 0px; /* marge intérieure */
+  margin-top: 0px; /* marge intérieure */
+}
+#ImgDisneyPlus img{
+  width: 333px; /* largeur de l'image */
+  height: auto; /* hauteur automatique */
+}
+.TexteDisneyPlus {
+  padding-left: 30px; /* espace intérieur */
+}
+#BoxTitleDisney {
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+    font-family: 'InspireTWDC'; /* police de caractères */
+  font-size: 21px; /* taille de la police */margin-left: 0px; /* marge intérieure */
+  margin-top: -205px; /* marge intérieure */
+}
+#BoxParaDisney {
+  font-family: 'InspireTWDC'; /* police de caractères */
+  font-size: 15.5px; /* taille de la police */
+  margin-top: 15px;
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+}
+#BoxStrongDisney {
+  margin-top: 95px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 28px;
+  align-items: center;
+  font-family: 'InspireTWDC Black'
+  font-size: 16px; /* taille de la police */
+  margin-top: px;
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+  transform: scaleY(0.8); /* échelle de l'image */  
+}
+
+#ImgFilms {
+  position: relative; /* position relative */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px;
+  height: 603.633px; /* hauteur de l'image */
+  background-color: #ffffff;
+  margin-left: 0px; /* marge intérieure */
+  margin-top: 0px; /* marge intérieure */
+}
+#ImgFilms img{
+  width: 333px; /* largeur de l'image */
+  height: auto; /* hauteur automatique */
+}
+.TexteFilms {
+  padding-left: 30px; /* espace intérieur */
+}
+#BoxTitleFilms {
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+    font-family: 'InspireTWDC'; /* police de caractères */
+  font-size: 21px; /* taille de la police */
+  margin-left: 0px; /* marge intérieure */
+  margin-top: -205px; /* marge intérieure */
+}
+#BoxParaFilms {
+  font-family: 'InspireTWDC'; /* police de caractères */
+  font-size: 15.5px; /* taille de la police */
+  margin-top: 15px;
+  margin-left: 0px; /* marge intérieure */
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+}
+#BoxStrongFilms {
+  margin-top: 95px;
+  margin-left: 0px; /* marge intérieure */
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 2;
+  align-items: center;
+  font-family: 'Matterhorn'; /* police de caractères */
+  font-size: 14px; /* taille de la police */
+  margin-top: px;
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+  transform: scaleY(0.8); /* échelle de l'image */  
+}
+
+#ImgParcs {
+  position: relative; /* position relative */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px;
+  height: 603.633px; /* hauteur de l'image */
+  background-color: #ffffff;
+  margin-left: 0px; /* marge intérieure */
+  margin-top: 0px; /* marge intérieure */
+}
+#ImgParcs img{
+  width: 333px; /* largeur de l'image */
+  height: auto; /* hauteur automatique */
+}
+.TexteParcs {
+  padding-left: 30px; /* espace intérieur */
+}
+#BoxTitleParcs {
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+    font-family: 'InspireTWDC'; /* police de caractères */
+  font-size: 21px; /* taille de la police */margin-left: 0px; /* marge intérieure */
+  margin-top: -205px; /* marge intérieure */
+}
+#BoxParaParcs {
+  font-family: 'InspireTWDC'; /* police de caractères */
+  font-size: 15.5px; /* taille de la police */
+  margin-top: 15px;
+  margin-left: 0px; /* marge intérieure */
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+}
+#BoxStrongParcs {
+  margin-top: 25px;
+  margin-left: 0px; /* marge intérieure */
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 2;
+  align-items: center;
+  font-family: 'Matterhorn'; /* police de caractères */
+  font-size: 14px; /* taille de la police */
+  margin-top: px;
+  position: relative; /* position absolue */
+  z-index: 1; /* niveau d'empilement */
+  width: 333px; /* largeur de l'image */
+  transform: scaleY(0.8); /* échelle de l'image */  
+}
+.BlueBackArea {
+  width: 100%; /* largeur de l'image */
+  background-color: #054553;
+  height: 615.2px; /* hauteur automatique */
+  margin-top: px; /* marge supérieure */
+}
+.SubDisneyBandeau {
+  display: flex; /* affichage flexible */
+  justify-content: center;
+  flex-direction: column;
+  width: 100%; /* largeur de l'image */
+  background-color: #054553;
+  height: 615.2px; /* hauteur automatique */
+  margin-top: px; /* marge supérieure */
+  
+}
+
+.PropositionsBoites {
+  display: flex; /* affichage flexible */
+  justify-content: center;
+  flex-direction: row; /* direction des éléments */
+  gap: 20px; /* espace entre les éléments */
+  margin-top: 50px; /* marge supérieure */
+  margin-bottom: 50px; /* marge inférieure */
+}
+.BoiteTest {
+  margin-right: 1em;
+}
+
+#TitleBandeauDisneyPlus {
+  font-family: 'InspireTWDC'; /* police de caractères */
+  color: #ffffff; /* couleur du texte */
+}
+
+.PropositionsBoites img {
+  width: 457px; /* largeur de l'image */
+  height: auto; /* hauteur automatique */
+  overflow: hidden;
+}
+
+.PropositionsBoites img:hover {
+  transform: scale(1.05); /* échelle de l'image */
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1); /* transition plus douce */
+}
+.sinscire {
+  display: flex; /* affichage flexible */
+  flex-direction: column;
+  align-items: center;
+}
