@@ -34,9 +34,12 @@
         --effetZoom-transform: scale(1.05);
         --effetZoom-transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
-a {
+a, a:visited, a:active {
   text-decoration: none; /* pas de soulignement */
   color: #0c0c0c; /* couleur du texte */
+}
+ {
+  text-decoration: none;
 }
 main {
     max-width: var(--bigger-max-width); /* largeur de la section */
@@ -146,10 +149,8 @@ header {
 }
 header div nav {
   max-width: 1600px;
-  margin: 0 auto;
-}
-header div nav ul{
-  margin-left: 3%;
+  margin-top: 0.3%;
+  margin-left: 1%;
 }
 ul li {
   /* réglage police de caractères */
@@ -184,7 +185,7 @@ ul li a img {
   margin-top: 1px;
   width: 95px;
   height: 40px;
-  
+
 }
 u {
     padding-bottom: 0;
@@ -194,7 +195,7 @@ u {
     display: none;
     position: absolute;
     top: 25px;
-    left: 50px;
+    left: 20px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -213,7 +214,7 @@ u {
 }
 #menuToggle span {
     display: block;
-    width: 26px;
+    width: 18px;
     height: 2px;
     margin-bottom: 5px;
     position: relative;
@@ -222,8 +223,7 @@ u {
     z-index: 1;
     transform-origin: 3px 0px;
     transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0);
-    background: 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    opacity 0.55s ease;
+    background: 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
 }
 #menuToggle span:first-child {
     transform-origin: 0% 0%;
@@ -236,14 +236,10 @@ u {
     transform: rotate(45deg) translate(-2px, -1px);
     background: #000000;
 }
-#menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg)     
-      scale(0.2, 0.2);
-}
 #menuToggle input:checked ~ span:nth-last-child(2) {
     opacity: 1;
-    transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(-45deg);
+    background: black;
 }
 #menu {
     position: absolute;
@@ -317,7 +313,6 @@ u {
         position: relative;
         z-index: 2;
         left: 19%;
-        
 }
 .ContenerLiloStitch {
   position: absolute;
@@ -380,7 +375,7 @@ figure img {
   width: 100%; /* largeur de l'image */
 }
 .boxTitle {
-  padding-top: 10%;
+  padding-top: 20px;
   font-family: var(--body-font-family);
   font-weight: var(--body-font-weight);
   font-style: var(--body-font-style);
@@ -397,7 +392,8 @@ figure img {
   padding-bottom: 10px;
 }
 .boxStrong {
-  padding-bottom: 10%;
+  padding-bottom: 20px;
+  padding-top: 20px;
   text-align: left;
   color: #222;
   font-size: 0.75em;
@@ -541,17 +537,13 @@ span {
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.4%; /* espace entre les boîtes */
+  gap: 1.4%; 
 }
-.dimen50, .dim23 > a {
+.dimen50 {
   width: 49%;
-  height: 100%;
 }
 .dim23 {
-  display: flex;
-  gap: 3%;
-  height: 100%;
-  width: 49%;
+  width: 24.1%;
 }
 .spectaclesDisney figure img {
   display: flex;
@@ -735,7 +727,6 @@ footer > h4 {
 /* #region MEDIA QUERY */
 
 @media screen and (max-width: 782px) {
-   
     .ContenerLiloStitch, .contenerBoutique, .contenerNewsletter {
       position:static;
       align-items: center;
@@ -758,7 +749,8 @@ footer > h4 {
         flex-direction: column;
     }
     #menu li {
-        font-size: 1.5em;
+        font-size: 1.0em;
+        font-weight: 700;
     }
     header nav {
         display: none; /* hide the header on small screens */
@@ -786,6 +778,10 @@ footer > h4 {
         height: 100%;          /* Hauteur à ajuster selon ton design */
         overflow: hidden;       /* Masque ce qui dépasse */
         position: relative;    
+    }
+    .ContenerLiloStitch{
+      margin-top: 5%;
+      margin-bottom: 20%;
     }
     #fondLilo img {
         width: 172%;           /* L'image est plus large que l'écran */
@@ -829,6 +825,8 @@ footer > h4 {
     .spectaclesDisney {
         margin-top: 10%;
         width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .spectaclesDisney > .dim87 {
         display: flex;
@@ -895,14 +893,11 @@ footer > h4 {
         margin-top: -2%;
     }
     .contenerBoutique {
-        
         position: static;
         background-color: #f1edb1;
         margin: 0 auto; 
         width: 100%;
         margin-top: -2%;
-        
     }
-
 }
 /* #endregion */
