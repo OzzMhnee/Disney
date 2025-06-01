@@ -416,7 +416,6 @@ figure img {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
 }
 h1 {
   margin-top: 20%;
@@ -721,6 +720,7 @@ footer > h4 {
 /* #endregion */
 
 
+
 /* ========================= */
 /*        MEDIA QUERY        */
 /* ========================= */
@@ -900,4 +900,5 @@ footer > h4 {
         margin-top: -2%;
     }
 }
+
 /* #endregion */
